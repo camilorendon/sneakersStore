@@ -1,9 +1,15 @@
 const express = require('express')
 const mongoose = require('mongoose')
 require("dotenv").config()
+const productRoutes = require("./routes/products")
 
 const app = express()
 const port = process.env.PORT || 9000
+
+//middleware
+app.use(express.json())
+app.use('/api', productRoutes)
+
 
 //routes
 

@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"baletas",
+    "brand":"asdasds",
+    "price":"67 USD",
+    "inStock":true
+}
+
+
+###
+GET http://localhost:9000/api/products HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/65354fb6a5613c37c5bdbcc6 HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/products/65356675b6de589a03edd385 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"zapatos",
+    "brand":"adidas",
+    "price":"243 USD",
+    "inStock":true
+}
+
+###
+DELETE http://localhost:9000/api/products/6535676a0d13b9518d0d5ffb HTTP/1.1
